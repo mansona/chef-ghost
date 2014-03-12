@@ -11,5 +11,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[chef-ghost::default]
+      - recipe[ghost::default]
     attributes:

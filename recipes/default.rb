@@ -8,17 +8,5 @@
 #install dependancies
 include_recipe 'nodejs::install_from_package'
 
-directory "/apps" do
-  action :create
-end
-
-package "unzip"
-
-remote_file '/apps/ghost.zip' do
-  source 'https://ghost.org/zip/ghost-latest.zip'
-  action :create_if_missing
-end
-
-execute "unzip -uo ghost.zip -d ghost" do
-  cwd '/apps/'
-end
+#other internal recipes
+include_recipe 'ghost::download_unzip'

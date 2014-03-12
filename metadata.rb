@@ -1,4 +1,4 @@
-name             'chef-ghost'
+name             'ghost'
 maintainer       'Chris Manson'
 maintainer_email 'chris@manson.ie'
 license          'MIT'
